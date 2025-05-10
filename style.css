@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.drop-zone {
+  border: 2px dashed #3498db;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.drop-zone.dragover {
+  background-color: #e1f0fa;
+  border-color: #2980b9;
+}
+
+#mergeBtn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+#mergeBtn:hover {
+  background-color: #2980b9;
+}
+
+#mergeBtn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+#statusMessage {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#statusMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#statusMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+#statusMessage.info {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+/* Add these new styles */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+#resetBtn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#resetBtn:hover {
+  background-color: #d32f2f;
+}
+
+#resetBtn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}

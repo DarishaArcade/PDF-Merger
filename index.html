@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Merger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📄 PDF Merger</h1>
+    <center><p>Select or drag & drop PDF files to merge</p></center>
+
+    <input type="file" id="pdfInput" multiple accept="application/pdf" hidden>
+    <div class="drop-zone" id="dropZone">
+      <p>Drag & Drop PDFs here or click to upload</p>
+    </div>
+
+    <div class="button-group">
+      <button id="mergeBtn" disabled>Merge PDFs</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    
+    <a id="downloadLink" class="download-btn" style="display:none;">
+      Download Merged PDF
+    </a>
+    <div id="statusMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
